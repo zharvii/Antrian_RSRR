@@ -1,2 +1,2 @@
 # Antrian
-Aplikasi Antrian Rumah Sakit
+Sistem Informasi Antrian Rumah Sakit Rahman Rahim Sidoarjo
