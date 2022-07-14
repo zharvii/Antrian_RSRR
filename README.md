@@ -1,2 +1,2 @@
 # Antrian
-Sistem Informasi Antrian Rumah Sakit Rahman Rahim Sidoarjo
+Sistem Antrian Rumah Sakit Rahman Rahim Sidoarjo
