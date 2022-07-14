@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Antrian RSRR Drop</title>
+
+  <link rel="stylesheet" href="/display/css/bootstrap.css" />
+  <link rel="stylesheet" href="/display/css/soff.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="/display/media/Master Logo.png" height="100px" width="100px" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page">
+              <h3>Antrian</h3>
+              <h2 style="font-family: Cooper Black;">RS. Rahman Rahim</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex">
+        <div class="card" style="width: 15rem;">
+          <div class="card-body" style="text-align: center;">
+            <h4 id="tgl">17 Agustus 2020</h4>
+            <h4 id="jam">00:00 WIB</h4>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <section style="margin: 8px;">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-header" style="text-align: center;">
+            <h2>PASIEN UMUM</h2>
+          </div>
+          <div class="card-body">
+            <h1 style="text-align: center; font-size: 6em;" id="aumum">
+              -
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-header" style="text-align: center;">
+            <h2>PASIEN BPJS</h2>
+          </div>
+          <div class="card-body">
+            <h1 style="text-align: center; font-size: 6em;" id="abpjs">
+              -
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" id="gu">
+        <div class="row">
+          <!-- <div class="col-md-4">
+              <div class="card border-primary mb-3">
+                <div
+                  class="card-header bg-transparent border-primary"
+                  style="text-align: center;"
+                >
+                  <b>POLI KANDUNGAN</b>
+                </div>
+                <div class="card-body text-primary">
+                  <h5
+                    class="card-title"
+                    style="text-align: center; font-size: 3em;"
+                  >
+                    A001
+                  </h5>
+                </div>
+                <div
+                  class="card-footer bg-transparent border-primary"
+                  style="text-align: center;"
+                >
+                  <marquee
+                    scrollamount="1"
+                    style="width: 100%;"
+                    behavior=""
+                    direction=""
+                    ><b>-</b></marquee
+                  >
+                </div>
+              </div>
+            </div> -->
+        </div>
+      </div>
+
+      <!-- BPJS -->
+      <div class="col-md-6" id="gb">
+        <div class="row">
+          <!-- <div class="col-md-4">
+              <div class="card border-success mb-3">
+                <div
+                  class="card-header bg-transparent border-success"
+                  style="text-align: center;"
+                >
+                  <b>POLI KANDUNGAN</b>
+                </div>
+                <div class="card-body text-success">
+                  <h5
+                    class="card-title"
+                    style="text-align: center; font-size: 3em;"
+                  >
+                    A001
+                  </h5>
+                </div>
+                <div
+                  class="card-footer bg-transparent border-success"
+                  style="text-align: center;"
+                >
+                  <marquee
+                    scrollamount="1"
+                    style="width: 100%;"
+                    behavior=""
+                    direction=""
+                    ><b>Test</b>
+                  </marquee>
+                </div>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="/display/js/bootstrap.js"></script>
+  <script src="/js/socket.io.js"></script>
+  <script src="/js/display.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesin Antiran RSRR</title>
+    <meta name="description" content="Blueprint: Split Layout" />
+    <meta
+      name="keywords"
+      content="website template, layout, css3, transition, effect, split, dual, two sides, portfolio"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <form id="frm" onsubmit="return false;">
+      <input type="hidden" name="pelayanan" id="pel" />
+      <input type="hidden" name="kategori" id="kat" />
+      <input type="hidden" name="kode" id="kode" />
+      <input type="hidden" name="dokter" id="dok" />
+    </form>
+    <div class="container">
+      <div id="splitlayout" class="splitlayout">
+        <div class="intro">
+          <div class="side side-left">
+            <header class="codropsheader clearfix">
+              <span>Mesin Antrian</span>
+              <h1>RS. RAHMAN RAHIM</h1>
+            </header>
+            <div class="intro-content">
+              <div class="profile" id="umum">
+                <img src="img/V Logo.png" alt="RSRR" />
+              </div>
+              <h1><span>UMUM</span></h1>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          <div class="side side-right">
+            <div class="intro-content">
+              <div class="profile" id="bpjs">
+                <img src="img/bpjs.png" alt="profile2" />
+              </div>
+              <h1><span>BPJS</span></h1>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <!-- /intro -->
+        <!-- BPJS -->
+        <div class="page page-right">
+          <div class="page-inner" id="gridBpjs">
+            <h2>Pilih Poli</h2>
+            <div id="gb">
+              <section>
+                <div class="row">
+                  <div class="column">
+                    <div data-id="test" class="card">
+                      <h3 class="btitle">Test Card 1</h3>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- /page-inner -->
+        </div>
+        <!-- /page-right -->
+
+        <!-- UMUM -->
+        <div class="page page-left">
+          <div class="page-inner" id="gridUmum">
+            <h2>Pilih Poli</h2>
+            <div id="gu">
+              <section>
+                <div class="row">
+                  <div class="column">
+                    <div data-id="test" class="card2">
+                      <h3>Test Card 1</h3>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- /page-inner -->
+        </div>
+        <!-- /page-left -->
+        <a href="#" class="back back-right" id="ku" title="Kembali">&rarr;</a>
+        <a href="#" class="back back-left" id="kb" title="kembali">&larr;</a>
+      </div>
+      <!-- /splitlayout -->
+    </div>
+    <!-- /container -->
+
+    <!-- Modal content BPJS -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header-green">
+          <span class="close">&times;</span>
+          <h2>Pilih Dokter</h2>
+        </div>
+        <div class="modal-body">
+          <div id="mBpjs">
+            <section>
+              <div class="row" style="padding: 10px;">
+                <div class="column">
+                  <div class="card3">
+                    <h3>Card 1</h3>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="modal-footer-green">
+          Antrian BPJS
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content UMUM -->
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <div class="modal-header-blue">
+          <span class="close">&times;</span>
+          <h2>Pilih Dokter</h2>
+        </div>
+        <div class="modal-body">
+          <div id="mUmum">
+            <section>
+              <div class="row" style="padding: 10px;">
+                <div class="column">
+                  <div class="card4">
+                    <h3>Card 1</h3>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="modal-footer-blue">
+          Antrian UMUM
+        </div>
+      </div>
+    </div>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpSplitLayout.js"></script>
+    <script src="js/socket.io.js"></script>
+    <script src="js/home.js"></script>
+    <script></script>
+  </body>
+</html>
